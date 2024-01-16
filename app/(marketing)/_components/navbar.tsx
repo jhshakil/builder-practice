@@ -24,11 +24,7 @@ const Navbar = () => {
     >
       <Logo />
       <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2">
-        {isLoading && (
-          <p>
-            <Spinner />
-          </p>
-        )}
+        {isLoading && <Spinner />}
         {!isAuthenticated && !isLoading && (
           <>
             <SignInButton mode="modal">
